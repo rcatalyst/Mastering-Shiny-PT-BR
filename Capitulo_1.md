@@ -53,7 +53,7 @@ Antes de continuarmos, verifique se você tem todo o software necessário para e
 
     * RStudio: O RStudio é um ambiente de desenvolvimento integrado (IDE) gratuito e de código aberto para R. Embora você possa escrever e usar aplicativos Shiny com qualquer ambiente R (incluindo R GUI e ESS), o RStudio possui alguns recursos interessantes especificamente para criação, depuração e implantando aplicativos brilhantes. Recomendamos experimentá-lo, mas não é necessário ter sucesso com o Shiny ou com este livro. Você pode fazer o download do RStudio Desktop em https://www.rstudio.com/products/rstudio/download
 
-    * Pacotes R: Este livro usa vários pacotes R. Você pode instalá-los todos de uma vez executando:
+    + Pacotes R: Este livro usa vários pacotes R. Você pode instalá-los todos de uma vez executando:
 ```
 install.packages(c(
   "gapminder", "ggforce", "openintro", "shiny", "shinyFeedback", 
