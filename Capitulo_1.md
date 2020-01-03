@@ -60,8 +60,9 @@ install.packages(c(
 ```
 1.6 Agradecimentos
 
-Este livro foi escrito em campo aberto e os capítulos foram anunciados no twitter quando concluídos. É realmente um esforço da comunidade: muitas pessoas lêem rascunhos, corrigem erros de digitação, sugerem melhorias e contribuem com conteúdo. Sem esses colaboradores, o livro não seria tão bom quanto é, e estou profundamente agradecido por sua ajuda.
+Este livro foi escrito em formato aberto e os capítulos foram anunciados no twitter quando concluídos. É realmente um esforço da comunidade: muitas pessoas lêem rascunhos, corrigem erros de digitação, sugerem melhorias e contribuem com conteúdo. Sem esses colaboradores, o livro não seria tão bom quanto é, e estou profundamente agradecido por sua ajuda.
 
 Um grande obrigado a todas as 12 pessoas que contribuíram com melhorias específicas via solicitações de recebimento do GitHub (em ordem alfabética por nome de usuário): @chsafouane, David Granjon (@DivadNojnarg), Federico Marini (@federicomarini), Hedley (@ heds1), Joe Cheng ( @ jcheng5), @jyuu, Malcolm Barrett (@malcolmbarrett), Mine Cetinkaya-Rundel (@ mine-cetinkaya-rundel), Pietro Monticone (@pitmonticone), psicometrista (@psychometrician), Shixiang Wang (@ShixiangWang), Tanner Stauss @tmstauss).
+
 
 
