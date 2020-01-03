@@ -11,7 +11,7 @@ No passado, a criação de aplicativos da web era difícil para a maioria dos us
 
 O Shiny torna significativamente mais fácil para o programador R criar aplicativos da web:
 
-    * Fornecer um conjunto cuidadosamente organizado de funções da interface do usuário (UI para abreviar) que geram o HTML, CSS e JavaScript necessários para tarefas comuns. Isso significa que você não precisa conhecer os detalhes de HTML / CSS / JS até querer ir além do básico que o Shiny fornece para você.
+    * Fornecendo um conjunto cuidadosamente organizado de funções da interface do usuário (UI para abreviar) que geram o HTML, CSS e JavaScript necessários para tarefas comuns. Isso significa que você não precisa conhecer os detalhes de HTML / CSS / JS até querer ir além do básico que o Shiny fornece para você.
     * Introduzindo um novo estilo de programação chamado programação reativa que rastreia automaticamente as dependências de um pedaço de código. Isso significa que sempre que uma entrada é alterada, o Shiny pode descobrir automaticamente como realizar a menor quantidade de trabalho para atualizar todas as saídas relacionadas.
 
 As pessoas usam o Shiny para:
