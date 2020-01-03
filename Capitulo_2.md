@@ -23,14 +23,10 @@ Existem várias maneiras de criar um aplicativo Shiny. O mais simples é criar u
 
 Experimente criar um novo diretório e adicione um arquivo <code>app.R</code> parecido com este:
 
-<code>
-library(shiny)
-ui <- fluidPage(
-  "Hello, world!"
-)
-server <- function(input, output, session) {
-}
-shinyApp(ui, server)
-</code>
-
-
+<code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(shiny)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">  <span class="st">"Hello, world!"</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">)</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">}</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="kw">shinyApp</span>(ui, server)</a></code>
