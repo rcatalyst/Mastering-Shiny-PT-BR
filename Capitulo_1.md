@@ -49,15 +49,16 @@ O foco deste livro é tornar aplicativos Shiny eficazes e entender a teoria subj
 
 Antes de continuarmos, verifique se você tem todo o software necessário para este livro:
 
+<p>
     * R: Se você ainda não possui o R instalado, pode estar lendo o livro errado; Presumo uma familiaridade básica com R ao longo deste livro. Se você quiser aprender a usar o R, recomendo o meu R for Data Science, projetado para colocar você em funcionamento com o R com o mínimo de esforço.
 
     * RStudio: O RStudio é um ambiente de desenvolvimento integrado (IDE) gratuito e de código aberto para R. Embora você possa escrever e usar aplicativos Shiny com qualquer ambiente R (incluindo R GUI e ESS), o RStudio possui alguns recursos interessantes especificamente para criação, depuração e implantando aplicativos brilhantes. Recomendamos experimentá-lo, mas não é necessário ter sucesso com o Shiny ou com este livro. Você pode fazer o download do RStudio Desktop em https://www.rstudio.com/products/rstudio/download
 
-    + Pacotes R: Este livro usa vários pacotes R. Você pode instalá-los todos de uma vez executando:
+    * Pacotes R: Este livro usa vários pacotes R. Você pode instalá-los todos de uma vez executando:
 ```
 install.packages(c(
   "gapminder", "ggforce", "openintro", "shiny", "shinyFeedback", 
   "shinythemes", "tidyverse", "vroom", "waiter" 
 ))
 ```
-
+</p>
