@@ -6,7 +6,7 @@ Se você nunca usou o Shiny antes, seja bem-vindo! Shiny é um pacote R que perm
 
 No passado, a criação de aplicativos da web era difícil para a maioria dos usuários de R, porque:
 
-    * Você precisa de um conhecimento profundo de tecnologias da web como HTML, CSS e JavaScript.
+    * Você precisava de um conhecimento profundo de tecnologias da web como HTML, CSS e JavaScript.
     * A criação de aplicativos interativos complexos requer uma análise cuidadosa dos fluxos de interação para garantir que, quando uma entrada for alterada, apenas as saídas relacionadas sejam atualizadas.
 
 O Shiny torna significativamente mais fácil para o programador R criar aplicativos da web:
