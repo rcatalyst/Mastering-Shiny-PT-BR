@@ -57,10 +57,8 @@ Escolha uma dessas opções e verifique se você vê o mesmo aplicativo da Figur
 
 <img src="https://d33wubrfki0l68.cloudfront.net/e9e6b44c85c169aedd2c4e630022e7958aa57696/06ba0/images/basic-app/hello-world.png" alt="The very basic shiny app you'll see when you run the code above" width="440">
 
-<p class="caption">
 Figura 2.1: O aplicativo Shiny muito básico que você verá quando executar o código acima
-</p>
 
 Antes de fechar o aplicativo, volte ao RStudio e veja o console R. Você notará que ele diz algo como:
 
-<a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co">#&gt; Listening on http://127.0.0.1:3827</span></a>
+<code>#> Listening on http://127.0.0.1:3827</code>
