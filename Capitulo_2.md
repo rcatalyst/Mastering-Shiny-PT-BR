@@ -94,3 +94,6 @@ Este exemplo usa quatro novas funções:
     * selectInput() é um controle de entrada que permite ao usuário interagir com o aplicativo fornecendo um valor. Nesse caso, é uma caixa de seleção com o rótulo "Dataset" e permite escolher um dos conjuntos de dados integrados que acompanham o R. Você aprenderá mais sobre as entradas na Seção 3.2.
     * verbatimTextOutput() e tableOutput() são controles de saída que informam ao Shiny onde colocar a saída renderizada (veremos como em outro momento). verbatimTextOutput() exibe código e tableOutput exibe tabelas. Você aprenderá mais sobre saídas na Seção 3.3.
 
+Funções de layout, entradas e saídas têm usos diferentes, mas são basicamente as mesmas: são todas maneiras sofisticadas de gerar HTML e, se você chamar qualquer uma delas fora de um aplicativo Shiny, verá HTML impresso no console. Não tenha medo de bisbilhotar para ver como esses vários layouts e controles funcionam sob o capô. Você aprenderá mais sobre os detalhes no capítulo 13.
+
+Vá em frente e execute o aplicativo novamente. Agora você verá a Figura 2.2, uma página que contém uma caixa de seleção. Nós vemos apenas a entrada, e não as duas saídas, porque ainda não dissemos ao Shiny como as entradas e saídas estão relacionadas.
