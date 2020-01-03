@@ -64,5 +64,56 @@ Este livro foi escrito em formato aberto e os capítulos foram anunciados no twi
 
 Um grande obrigado a todas as 12 pessoas que contribuíram com melhorias específicas via solicitações de recebimento do GitHub (em ordem alfabética por nome de usuário): @chsafouane, David Granjon (@DivadNojnarg), Federico Marini (@federicomarini), Hedley (@ heds1), Joe Cheng ( @ jcheng5), @jyuu, Malcolm Barrett (@malcolmbarrett), Mine Cetinkaya-Rundel (@ mine-cetinkaya-rundel), Pietro Monticone (@pitmonticone), psicometrista (@psychometrician), Shixiang Wang (@ShixiangWang), Tanner Stauss @tmstauss).
 
+1.7 Colophon
 
+Este livro foi escrito no RStudio usando bookdown. O site é hospedado com netlify e atualizado automaticamente após cada confirmação por travis-ci. A fonte completa está disponível no GitHub.
+
+Esta versão do livro foi criada com a versão R 3.6.1 (27-01- 2017) e os seguintes pacotes:
+
+<table>
+<thead>
+<tr class="header">
+<th align="left">package</th>
+<th align="left">version</th>
+<th align="left">source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">gapminder</td>
+<td align="left">0.3.0</td>
+<td align="left">CRAN (R 3.6.1)</td>
+</tr>
+<tr class="even">
+<td align="left">ggforce</td>
+<td align="left">0.3.1</td>
+<td align="left">CRAN (R 3.6.1)</td>
+</tr>
+<tr class="odd">
+<td align="left">openintro</td>
+<td align="left">1.7.1</td>
+<td align="left">CRAN (R 3.6.1)</td>
+</tr>
+<tr class="even">
+<td align="left">shiny</td>
+<td align="left">1.4.0</td>
+<td align="left">CRAN (R 3.6.1)</td>
+</tr>
+<tr class="odd">
+<td align="left">shinythemes</td>
+<td align="left">1.1.2</td>
+<td align="left">CRAN (R 3.6.1)</td>
+</tr>
+<tr class="even">
+<td align="left">tidyverse</td>
+<td align="left">1.2.1</td>
+<td align="left">CRAN (R 3.6.1)</td>
+</tr>
+<tr class="odd">
+<td align="left">vroom</td>
+<td align="left">1.0.2</td>
+<td align="left">CRAN (R 3.6.1)</td>
+</tr>
+</tbody>
+</table>
 
