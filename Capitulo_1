@@ -6,29 +6,21 @@ Se você nunca usou o Shiny antes, seja bem-vindo! Shiny é um pacote R que perm
 
 No passado, a criação de aplicativos da web era difícil para a maioria dos usuários de R, porque:
 
-    Você precisa de um conhecimento profundo de tecnologias da web como HTML, CSS e JavaScript.
-
-    A criação de aplicativos interativos complexos requer uma análise cuidadosa dos fluxos de interação para garantir que, quando uma entrada for alterada, apenas as saídas relacionadas sejam atualizadas.
+    * Você precisa de um conhecimento profundo de tecnologias da web como HTML, CSS e JavaScript.
+    * A criação de aplicativos interativos complexos requer uma análise cuidadosa dos fluxos de interação para garantir que, quando uma entrada for alterada, apenas as saídas relacionadas sejam atualizadas.
 
 O Shiny torna significativamente mais fácil para o programador R criar aplicativos da web:
 
-    Fornecer um conjunto cuidadosamente organizado de funções da interface do usuário (UI para abreviar) que geram o HTML, CSS e JavaScript necessários para tarefas comuns. Isso significa que você não precisa conhecer os detalhes de HTML / CSS / JS até querer ir além do básico que o Shiny fornece para você.
-
-    Introduzindo um novo estilo de programação chamado programação reativa que rastreia automaticamente as dependências de um pedaço de código. Isso significa que sempre que uma entrada é alterada, o Shiny pode descobrir automaticamente como realizar a menor quantidade de trabalho para atualizar todas as saídas relacionadas.
+    * Fornecer um conjunto cuidadosamente organizado de funções da interface do usuário (UI para abreviar) que geram o HTML, CSS e JavaScript necessários para tarefas comuns. Isso significa que você não precisa conhecer os detalhes de HTML / CSS / JS até querer ir além do básico que o Shiny fornece para você.
+    * Introduzindo um novo estilo de programação chamado programação reativa que rastreia automaticamente as dependências de um pedaço de código. Isso significa que sempre que uma entrada é alterada, o Shiny pode descobrir automaticamente como realizar a menor quantidade de trabalho para atualizar todas as saídas relacionadas.
 
 As pessoas usam o Shiny para:
 
-    Crie painéis que acompanhem importantes indicadores de desempenho e facilitem a busca por resultados surpreendentes.
-
-    Substitua centenas de páginas de PDFs por aplicativos interativos que permitem que o usuário pule para a fatia exata dos resultados de que gosta.
-
-    Comunique modelos complexos a um público não técnico com visualizações informativas e análise de sensibilidade interativa.
-
-    Forneça análise de dados de autoatendimento para fluxos de trabalho comuns, substituindo solicitações de email por um aplicativo Shiny que permite que as pessoas carreguem seus próprios dados e executem análises padrão.
-
-    Crie demonstrações interativas para o ensino de estatística e conceitos de ciência de dados que permitam aos alunos ajustar entradas e observar os efeitos post
-
-eriores dessas alterações em uma análise.
+    * Criar painéis que acompanhem importantes indicadores de desempenho e facilitem a busca por resultados surpreendentes.
+    * Substituir centenas de páginas de PDFs por aplicativos interativos que permitem que o usuário pule para a fatia exata dos resultados de que gosta.
+    * Comunicar modelos complexos a um público não técnico com visualizações informativas e análise de sensibilidade interativa.
+    * Fornecer análise de dados de autoatendimento para fluxos de trabalho comuns, substituindo solicitações de email por um aplicativo Shiny que permite que as pessoas carreguem seus próprios dados e executem análises padrão.
+    * Criar demonstrações interativas para o ensino de estatística e conceitos de ciência de dados que permitam aos alunos ajustar entradas e observar os efeitos posteriores dessas alterações em uma análise.
 
 Em resumo, o Shiny oferece a capacidade de transmitir alguns de seus superpoderes R para qualquer pessoa que possa usar um navegador da web.
 
