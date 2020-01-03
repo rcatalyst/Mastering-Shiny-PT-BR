@@ -29,7 +29,6 @@ Em resumo, o Shiny oferece a capacidade de transmitir alguns de seus superpodere
 Este livro é destinado a dois públicos principais:
 
     * Usuários R interessados em aprender sobre o Shiny para transformar suas análises em aplicativos da web interativos. Para tirar o máximo proveito deste livro, você deve se sentir confortável usando R para fazer a análise de dados e deve ter escrito pelo menos algumas funções.
-
     * Quem já são usuários do Shiny e querem aprimorar seus conhecimentos sobre a teoria subjacente ao Shiny para escrever aplicativos de alta qualidade com mais rapidez e facilidade. Você deve achar este livro particularmente útil se seus aplicativos estiverem começando a aumentar e você estiver tendo problemas para gerenciar a complexidade.
 
 1.3 O que você vai aprender?
