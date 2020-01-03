@@ -34,3 +34,9 @@ shinyApp(ui, server)
 ```
 Dica do RStudio: você pode criar facilmente um novo diretório e um arquivo <code>app.R</code> contendo um aplicativo básico Shiny em uma etapa clicando em File | New Project e, em seguida, selecione “New Directory” e “Shiny Web Application”. Ou, se você já criou o arquivo <code>app.R</code>, pode rapidamente usar um atalho digitando "shinyapp" e pressionando Shift+Tab.
 
+Este é um aplicativo Shiny completo, embora trivial! Observando atentamente o código acima, nosso <code>app.R</code> faz quatro coisas:
+
+    * Ele chama <code>library(shiny)</code> para carregar o pacote Shiny.
+    * Ele define a interface do usuário, a página HTML com a qual os humanos interagem. Nesse caso, é uma página que contém as palavras "Olá, mundo!".
+    * Ele especifica o comportamento do nosso aplicativo, definindo uma função <code>server</code>. No momento, ele está vazio, então nosso aplicativo não faz nada, mas voltaremos a revisar isso em breve.
+    * Ele executa o <code>shinyApp(ui, server)</code> para construir e iniciar um aplicativo Shiny a partir da interface do usuário e do servidor.
