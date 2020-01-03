@@ -64,7 +64,7 @@ Este livro foi escrito em formato aberto e os capítulos foram anunciados no twi
 
 Um grande obrigado a todas as 12 pessoas que contribuíram com melhorias específicas via solicitações de recebimento do GitHub (em ordem alfabética por nome de usuário): @chsafouane, David Granjon (@DivadNojnarg), Federico Marini (@federicomarini), Hedley (@ heds1), Joe Cheng ( @ jcheng5), @jyuu, Malcolm Barrett (@malcolmbarrett), Mine Cetinkaya-Rundel (@ mine-cetinkaya-rundel), Pietro Monticone (@pitmonticone), psicometrista (@psychometrician), Shixiang Wang (@ShixiangWang), Tanner Stauss @tmstauss).
 
-1.7 Colophon
+1.7 Cólofon
 
 Este livro foi escrito no RStudio usando bookdown. O site é hospedado com netlify e atualizado automaticamente após cada confirmação por travis-ci. A fonte completa está disponível no GitHub.
 
