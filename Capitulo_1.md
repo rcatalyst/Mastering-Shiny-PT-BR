@@ -40,3 +40,7 @@ O livro está dividido em cinco partes:
     * "Dominado a Interface de Usuário (UI)", mergulha nos detalhes da interface do usuário. Você aprenderá pacotes que o ajudarão a criar outros tipos de interface do usuário, como painéis e gadgets RStudio, e aprenderá o básico de HTML e CSS para personalizar o Shiny para atender exatamente às suas necessidades.
     * Em "Dominando a reatividade", você aprofundará a teoria e a prática da programação reativa, o paradigma de programação subjacente ao Shiny. Se você já é um usuário brilhante, obterá o máximo de valor deste capítulo, pois ele fornecerá uma base teórica sólida que permitirá criar novas ferramentas especificamente adaptadas aos seus problemas.
     * Por fim, em "Domesticando o Shiny", concluiremos uma pesquisa de técnicas úteis para fazer com que seus aplicativos Shiny funcionem bem na produção. Você aprenderá como medir e melhorar o desempenho, depurar problemas quando eles derem errado e gerenciar as dependências do seu aplicativo.
+
+1.4 O que você não aprendeu?
+
+O foco deste livro é tornar aplicativos Shiny eficazes e entender a teoria subjacente da reatividade. Farei o possível para mostrar as práticas recomendadas para ciência de dados, programação R e engenharia de software, mas você precisará de outras referências para dominar essas importantes habilidades. Se você gostou da redação deste livro, poderá aproveitar meus outros livros sobre estes tópicos: R for data science, Advanced R, and R packages.
