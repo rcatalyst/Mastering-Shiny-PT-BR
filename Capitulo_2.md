@@ -46,13 +46,12 @@ Este é um aplicativo Shiny completo, embora trivial! Observando atentamente o c
 
 Existem algumas maneiras de executar este aplicativo:
 
-    Clique no botão Run App na barra de ferramentas do documento.
-
+    * Clique no botão Run App na barra de ferramentas do documento.
 <img src="https://d33wubrfki0l68.cloudfront.net/23a8bff2e02f95092ff3b3ea6bc524020aef7de3/2db27/images/basic-app/run-app.png" style="display: block; margin: auto auto auto 0;" width="74">
-
-    Use um atalho de teclado: Cmd/Ctrl + Shift + Enter.
-
-    Se você não estiver usando o RStudio, poderá source() o documento inteiro ou chamar shiny::runApp() com o caminho para o diretório que contém o app.R.
+    * Use um atalho de teclado: Cmd/Ctrl + Shift + Enter.
+    * Se você não estiver usando o RStudio, poderá usar o source() no documento inteiro, ou chamar shiny::runApp() com o caminho para o diretório que contém o app.R.
 
 Escolha uma dessas opções e verifique se você vê o mesmo aplicativo da Figura 2.1. Parabéns! Você criou seu primeiro aplicativo Shiny.
+
+<img src="https://d33wubrfki0l68.cloudfront.net/e9e6b44c85c169aedd2c4e630022e7958aa57696/06ba0/images/basic-app/hello-world.png" alt="The very basic shiny app you'll see when you run the code above" width="440">
 
