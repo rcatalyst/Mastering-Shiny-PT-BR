@@ -56,7 +56,8 @@ Existem algumas maneiras de executar este aplicativo:
 Escolha uma dessas opções e verifique se você vê o mesmo aplicativo da Figura 2.1. Parabéns! Você criou seu primeiro aplicativo Shiny.
 
 <img src="https://d33wubrfki0l68.cloudfront.net/e9e6b44c85c169aedd2c4e630022e7958aa57696/06ba0/images/basic-app/hello-world.png" alt="The very basic shiny app you'll see when you run the code above" width="440">
+
 <p class="caption">
-Figure 2.1: O aplicativo Shiny muito básico que você verá quando executar o código acima
+Figura 2.1: O aplicativo Shiny muito básico que você verá quando executar o código acima
 </p>
 
