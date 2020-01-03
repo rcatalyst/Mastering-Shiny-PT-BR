@@ -79,7 +79,7 @@ O fluxo de trabalho básico do desenvolvimento de aplicativos Shiny é escrever 
 
 Em seguida, adicionaremos algumas entradas e saídas à nossa interface do usuário para que não seja tão mínimo. Vamos criar um aplicativo muito simples que mostra todos os quadros de dados internos incluídos no pacote de conjuntos de dados.
 
-Substitua sua ui por este código:
+Substitua sua <code>ui</code> por este código:
 
 ``` 
 ui <- fluidPage(
