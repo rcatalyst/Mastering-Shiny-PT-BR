@@ -32,5 +32,5 @@ server <- function(input, output, session) {
 }
 shinyApp(ui, server)
 ```
-Dica do RStudio: você pode criar facilmente um novo diretório e um arquivo <code>app.R</code> contém um aplicativo básico Shiny em uma etapa clicando em File | New Project e, em seguida, selecione “New Directory” e “Shiny Web Application”. Ou, se você já criou o arquivo <code>app.R</code>, pode adicionar rapidamente o padrão do aplicativo digitando "shinyapp" e pressionando Shift + Tab.
+Dica do RStudio: você pode criar facilmente um novo diretório e um arquivo <code>app.R</code> contendo um aplicativo básico Shiny em uma etapa clicando em File | New Project e, em seguida, selecione “New Directory” e “Shiny Web Application”. Ou, se você já criou o arquivo <code>app.R</code>, pode rapidamente usar um atalho digitando "shinyapp" e pressionando Shift+Tab.
 
