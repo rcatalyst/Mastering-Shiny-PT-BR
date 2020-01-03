@@ -1,5 +1,6 @@
 # Mastering-Shiny-PT-BR
 Tradução do Livro Mastering Shiny
+
 Autor: Hadley Wickham
 
 https://mastering-shiny.org
