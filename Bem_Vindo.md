@@ -1,4 +1,4 @@
-Esta é a versão on-line do Mastering Shiny, um livro atualmente em desenvolvimento e destinado a uma versão final em 2020 pela O'Reilly Media.
+Esta é a versão on-line do Mastering Shiny, um livro atualmente em desenvolvimento e planejado para sua versão final em 2020 pela O'Reilly Media.
 
 Shiny é uma estrutura para criar aplicativos da Web usando o código em R. Ele foi desenvolvido principalmente para os cientistas de dados e, para esse fim, você pode criar aplicativos Shiny bastante complicados, sem conhecimento de HTML, CSS ou JavaScript. Por outro lado, a Shiny não o limita à criação de aplicativos triviais ou pré-fabricados: seus componentes da interface do usuário podem ser facilmente personalizados ou estendidos, e seu servidor usa programação reativa para permitir que você crie qualquer tipo de lógica de back-end que desejar. O Shiny foi projetado para parecer quase magicamente fácil quando você está começando, e, quanto mais você aprende como funciona, mais você percebe que ele é construído com blocos de construção gerais que têm fortes princípios de engenharia de software.
 
