@@ -19,11 +19,11 @@ library(shiny)
 
 2.2 Criar diretório e arquivo do aplicativo
 
-Existem várias maneiras de criar um aplicativo Shiny. O mais simples é criar um novo diretório para o seu aplicativo e colocar um único arquivo chamado app.R nele. Este arquivo app.R será usado para informar ao Shiny a aparência e o comportamento do aplicativo.
+Existem várias maneiras de criar um aplicativo Shiny. O mais simples é criar um novo diretório para o seu aplicativo e colocar um único arquivo chamado <code>app.R</code> nele. Este arquivo <code>app.R</code> será usado para informar ao Shiny a aparência e o comportamento do aplicativo.
 
-Experimente criar um novo diretório e adicione um arquivo app.R parecido com este:
+Experimente criar um novo diretório e adicione um arquivo <code>app.R</code> parecido com este:
 
-```
+<code>
 library(shiny)
 ui <- fluidPage(
   "Hello, world!"
@@ -31,6 +31,6 @@ ui <- fluidPage(
 server <- function(input, output, session) {
 }
 shinyApp(ui, server)
-```
+</code>
 
 
