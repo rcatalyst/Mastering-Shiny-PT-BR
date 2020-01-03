@@ -74,3 +74,17 @@ Você pode parar o aplicativo e retornar o acesso ao console usando qualquer uma
     * Feche a janela do aplicativo Shiny.
 
 O fluxo de trabalho básico do desenvolvimento de aplicativos Shiny é escrever um código, iniciar o aplicativo, experimentar o aplicativo, reproduzi-lo, escrever um pouco mais de código, ... Você aprenderá outros padrões posteriormente no Capítulo 6.
+
+2.4 Adicionando controles de UI (Interface de Usuário)
+
+Em seguida, adicionaremos algumas entradas e saídas à nossa interface do usuário para que não seja tão mínimo. Vamos criar um aplicativo muito simples que mostra todos os quadros de dados internos incluídos no pacote de conjuntos de dados.
+
+Substitua sua ui por este código:
+
+``` 
+ui <- fluidPage(
+  selectInput("dataset", label = "Dataset", choices = ls("package:datasets")),
+  verbatimTextOutput("summary"),
+  tableOutput("table")
+)
+```
