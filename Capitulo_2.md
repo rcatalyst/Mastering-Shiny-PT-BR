@@ -65,11 +65,11 @@ Antes de fechar o aplicativo, volte ao RStudio e veja o console R. Você notará
 
 Isso indica a URL em que seu aplicativo pode ser encontrado: 127.0.0.1 é um endereço padrão que significa "este computador" e 3827 é um número de porta atribuído aleatoriamente. Você pode inserir essa URL em qualquer navegador compatível para abrir outra cópia do seu aplicativo.
 
-Observe também que o R está ocupado: o prompt R não está visível e a barra de ferramentas do console exibe um ícone de sinal de parada. Enquanto um aplicativo Shiny está em execução, ele "bloqueia" o console do R. Isso significa que você não pode executar novos comandos no console R até que o aplicativo Shiny pare.
+Observe também que o R está ocupado: o prompt R não está visível e a barra de ferramentas do console exibe um ícone de stop. Enquanto um aplicativo Shiny está em execução, ele "bloqueia" o console do R. Isso significa que você não pode executar novos comandos no console R até que o aplicativo Shiny pare.
 
 Você pode parar o aplicativo e retornar o acesso ao console usando qualquer uma destas opções:
 
-    * Clique no ícone stop na barra de ferramentas do console R.
+    * Clique no ícone de stop na barra de ferramentas do console R.
     * Clique no console e pressione Esc (ou pressione Ctrl + C se não estiver usando o RStudio).
     * Feche a janela do aplicativo Shiny.
 
