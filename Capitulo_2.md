@@ -88,3 +88,9 @@ ui <- fluidPage(
   tableOutput("table")
 )
 ```
+Este exemplo usa quatro novas funções:
+
+    * fluidPage() é uma função de layout que configura a estrutura visual básica da página. Você aprenderá mais sobre eles na Seção 3.4.
+    * selectInput() é um controle de entrada que permite ao usuário interagir com o aplicativo fornecendo um valor. Nesse caso, é uma caixa de seleção com o rótulo "Dataset" e permite escolher um dos conjuntos de dados integrados que acompanham o R. Você aprenderá mais sobre as entradas na Seção 3.2.
+    * verbatimTextOutput() e tableOutput() são controles de saída que informam ao Shiny onde colocar a saída renderizada (veremos como em outro momento). verbatimTextOutput() exibe código e tableOutput exibe tabelas. Você aprenderá mais sobre saídas na Seção 3.3.
+
