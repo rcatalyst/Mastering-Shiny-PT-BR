@@ -98,9 +98,6 @@ Funções de layout, entradas e saídas têm usos diferentes, mas são basicamen
 
 Vá em frente e execute o aplicativo novamente. Agora você verá a Figura 2.2, uma página que contém uma caixa de seleção. Nós vemos apenas a entrada, e não as duas saídas, porque ainda não dissemos ao Shiny como as entradas e saídas estão relacionadas.
 
-<div class="figure" style="text-align: center"><span id="fig:basic-ui"></span>
 <img src="https://d33wubrfki0l68.cloudfront.net/17eadbf2ccdea8d4648b05d486dfb465f562df69/1f1b0/screenshots/basic-app/ui.png" alt="The datasets app with UI" width="600">
-<p class="caption">
-Figure 2.2: The datasets app with UI
-</p>
-</div>
+
+Figura 2.2: O aplicativo datasets com UI
