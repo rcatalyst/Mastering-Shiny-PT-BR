@@ -43,7 +43,7 @@ O livro está dividido em cinco partes:
 
 1.4 O que você não aprendeu?
 
-O foco deste livro é tornar aplicativos Shiny eficazes e entender a teoria subjacente da reatividade. Farei o possível para mostrar as práticas recomendadas para ciência de dados, programação R e engenharia de software, mas você precisará de outras referências para dominar essas importantes habilidades. Se você gostou da redação deste livro, poderá aproveitar meus outros livros sobre estes tópicos: R for data science, Advanced R, and R packages.
+O foco deste livro é tornar aplicativos Shiny eficazes e entender a teoria subjacente da reatividade. Farei o possível para mostrar as práticas recomendadas para ciência de dados, programação R e engenharia de software, mas você precisará de outras referências para dominar essas importantes habilidades. Se você gostou da redação deste livro, poderá aproveitar meus outros livros sobre estes tópicos: R for data science, Advanced R, e R packages.
 
 1.5 Pré-requisitos
 
