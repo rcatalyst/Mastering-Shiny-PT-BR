@@ -187,5 +187,7 @@ ui <- fluidPage(
 
 2. Leia atentamente a documentação de <code>sliderInput()</code> para descobrir como criar um slider de data, conforme mostrado abaixo.
 
+<img src="https://d33wubrfki0l68.cloudfront.net/16dea4a0f7a4462dfd578a917bdf3e492ed6a7cd/9686e/screenshots/basic-ui/date-slider.png" style="display: block; margin: auto;" width="600">
+
 
 
