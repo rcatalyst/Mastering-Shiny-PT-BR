@@ -140,6 +140,4 @@ Execute o aplicativo novamente e brinque, observando o que acontece com a saída
 
 <img src="https://d33wubrfki0l68.cloudfront.net/bb766cc235f190fd2c28d8f011edb7f9cbe526a7/4a065/screenshots/basic-app/server.png" alt="Now that we've provided a server function that connects and inputs, we have a fully functional app" width="701">
 
-<p class="caption">
 Figura 2.3: Agora que fornecemos uma função de servidor que se conecta e insere, temos um aplicativo totalmente funcional
-</p>
