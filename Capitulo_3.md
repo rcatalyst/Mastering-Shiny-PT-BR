@@ -52,4 +52,22 @@ ui <- fluidPage(
 
 Se você deseja garantir que o texto tenha determinadas propriedades, use <code>validate()</code>, ao qual voltaremos no capítulo 7.
 
+3.2.3 Entradas numéricas
+
+Para coletar valores numéricos, crie um slider com <code>sliderInput()</code> ou uma caixa de texto restrita com <code>numericInput()</code>. Se você fornecer um vetor numérico de comprimento 2 para o valor padrão de <code>sliderInput()</code>, você obtém um "range" no slider com duas extremidades.
+
+```
+ui <- fluidPage(
+  numericInput("num", "Number one", value = 0, min = 0, max = 100),
+  sliderInput("num2", "Number two", value = 50, min = 0, max = 100),
+  sliderInput("rng", "Range", value = c(10, 20), min = 0, max = 100)
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/ba6c90aecddbd0d3df1c366f482f124fe7c6aba3/603a2/screenshots/basic-ui/numeric.png" style="display: block; margin: auto;" width="600">
+
+Geralmente, eu recomendo usar apenas sliders para pequenos intervalos ou casos em que o valor exato não é tão importante. Tentar selecionar com precisão um número em um pequeno slider é um exercício de frustração!
+
+Sliders são extremamente personalizáveis ​​e há muitas maneiras de ajustar sua aparência. Consulte <code>?sliderInput</code> e https://shiny.rstudio.com/articles/sliders.html para obter mais detalhes.
+
 
