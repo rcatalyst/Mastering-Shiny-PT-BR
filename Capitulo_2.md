@@ -178,5 +178,11 @@ server <- function(input, output, session) {
 
 Voltaremos à programação reativa várias vezes, mas mesmo com um conhecimento superficial de entradas, saídas e expressões reativas, é possível criar aplicativos Shiny bastante úteis!
 
+2.7 Folha de dicas
+
+Antes de continuar a ler mais sobre interfaces de usuário e programação reativa, agora é um ótimo momento para pegar uma cópia da folha de dicas do Shiny em https://www.rstudio.com/resources/cheatsheets/. Este é um ótimo recurso para ajudar você a memorizar os principais componentes de um aplicativo Shiny.
+
+<img src="https://d33wubrfki0l68.cloudfront.net/349cbcca50af85a9214e552296f33f14be37f768/52241/images/basic-app/cheatsheet.png" style="display: block; margin: auto;" width="352">
+
 
 
