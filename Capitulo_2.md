@@ -184,5 +184,90 @@ Antes de continuar a ler mais sobre interfaces de usuário e programação reati
 
 <img src="https://d33wubrfki0l68.cloudfront.net/349cbcca50af85a9214e552296f33f14be37f768/52241/images/basic-app/cheatsheet.png" style="display: block; margin: auto;" width="352">
 
+2.8 Exercícios
+
+1. Crie um aplicativo que cumprimente o usuário pelo nome. Você ainda não conhece todas as funções necessárias para isso, então incluí algumas linhas de código abaixo. Descubra quais linhas você usará, copie e cole no lugar certo em um aplicativo Shiny.
+
+```
+textInput("name", "What's your name?")
+renderText({
+  paste0("Hello ", input$name)
+})
+numericInput("age", "How old are you?")
+textOutput("greeting")
+tableOutput("mortgage")
+renderPlot("histogram", {
+  hist(rnorm(1000))
+})
+```
+
+2. Suponha que seu amigo deseje criar um aplicativo que permita ao usuário definir um número (<code>x</code>) entre 1 e 50 e exibir o resultado da multiplicação desse número por 5. Essa é sua primeira tentativa:
+
+Mas, infelizmente, há um erro:
+
+<img src="https://d33wubrfki0l68.cloudfront.net/49e6c31defef7af7a1f36eda709f40b7c9c61e54/86600/screenshots/basic-app/ex-x-times-5.png" style="display: block; margin: auto;" width="600">
+
+Você pode ajudá-lo a encontrar e corrigir o erro?
+
+3. Estenda o aplicativo do exercício anterior para permitir que o usuário defina o valor do multiplicador, <code>y</code>, para que o aplicativo produza o valor de <code>x * y</code>. O resultado final deve ficar assim:
+
+<img src="https://d33wubrfki0l68.cloudfront.net/727c20969a5ff77519ae1f0d9afcdecef641b771/b22bf/screenshots/basic-app/ex-x-times-y.png" style="display: block; margin: auto;" width="600">
+
+4. Substitua a UI e os componentes do server do seu aplicativo do exercício anterior pelos componentes da UI e do server abaixo, execute o aplicativo e descreva a funcionalidade do aplicativo. Em seguida, reduza a duplicação no aplicativo usando uma expressão reativa.
+
+```
+ui <- fluidPage(
+  sliderInput("x", "If x is", min = 1, max = 50, value = 30),
+  sliderInput("y", "and y is", min = 1, max = 50, value = 5),
+  "then, (x * y) is", textOutput("product"),
+  "and, (x * y) + 5 is", textOutput("product_plus5"),
+  "and (x * y) + 10 is", textOutput("product_plus10")
+)
+
+server <- function(input, output, session) {
+  output$product <- renderText({ 
+    product <- input$x * input$y
+    product
+  })
+  output$product_plus5 <- renderText({ 
+    product <- input$x * input$y
+    product + 5
+  })
+  output$product_plus10 <- renderText({ 
+    product <- input$x * input$y
+    product + 10
+  })
+}
+```
+
+5. O aplicativo a seguir é muito semelhante ao que você viu anteriormente no capítulo: você seleciona um conjunto de dados de um pacote (desta vez, estamos usando o pacote ggplot2) e o aplicativo imprime um resumo e um gráfico dos dados. Ele também segue as boas práticas e utiliza expressões reativas para evitar redundância de código. No entanto, existem três erros no código fornecido abaixo. Você pode encontrá-los e corrigi-los?
+
+``` 
+library(ggplot2)
+datasets <- data(package = "ggplot2")$results[, "Item"]
+
+ui <- fluidPage(
+  selectInput("dataset", "Dataset", choices = datasets),
+  verbatimTextOutput("summary"),
+  tableOutput("plot")
+)
+
+server <- function(input, output, session) {
+  dataset <- reactive({
+    get(input$dataset, "package:ggplot2")
+  })
+  output$summmry <- renderPrint({
+    summary(dataset())
+  })
+  output$plot <- renderPlot({
+    plot(dataset)
+  })
+}
+```
+<hr> 
+
+1. A Shiny se esforça para oferecer suporte a todos os navegadores modernos, e você pode ver o conjunto atualmente suportado em https://www.rstudio.com/about/platform-support/. Observe que as versões do Internet Explorer anteriores ao IE11 não são compatíveis ao executar o Shiny diretamente da sua sessão R., No entanto, os aplicativos Shiny implantados no Shiny Server ou no ShinyApps.io podem funcionar com o IE10 (as versões anteriores do IE não são mais suportadas).↩
+
+
 
 
