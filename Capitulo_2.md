@@ -101,3 +101,34 @@ Vá em frente e execute o aplicativo novamente. Agora você verá a Figura 2.2, 
 <img src="https://d33wubrfki0l68.cloudfront.net/17eadbf2ccdea8d4648b05d486dfb465f562df69/1f1b0/screenshots/basic-app/ui.png" alt="The datasets app with UI" width="600">
 
 Figura 2.2: O aplicativo datasets com UI
+
+2.5 Adicionando comportamento
+
+Em seguida, daremos vida às saídas definindo-as na função de servidor.
+
+Shiny usa programação reativa para tornar os aplicativos interativos. Você aprenderá mais sobre programação reativa no Capítulo 4, mas, por enquanto, esteja ciente de que isso envolve dizer ao Shiny como executar um cálculo, não ordenando que o Shiny o faça. É como a diferença entre dar a alguém uma receita e exigir que ela faça um sanduíche para você.
+
+Nesse caso simples, informaremos ao Shiny como preencher o <code>summary</code> e as <code>table</code> de saídas - fornecendo as "receitas" para esses resultados. Substitua sua função vazia de <code>server</code> por esta:
+
+```
+server <- function(input, output, session) {
+  output$summary <- renderPrint({
+    dataset <- get(input$dataset, "package:datasets")
+    summary(dataset)
+  })
+  
+  output$table <- renderTable({
+    dataset <- get(input$dataset, "package:datasets")
+    dataset
+  })
+}
+```
+
+Quase toda saída que você escrever no Shiny seguirá o mesmo padrão:
+
+```
+output$ID <- renderTYPE({
+  # Expression that generates whatever kind of output
+  # renderTYPE expects
+})
+```
