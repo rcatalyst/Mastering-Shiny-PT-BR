@@ -128,8 +128,8 @@ Quase toda saída que você escrever no Shiny seguirá o mesmo padrão:
 
 ```
 output$ID <- renderTYPE({
-  # Expressão que gera qualquer tipo de output
-  # Espera de renderTYPE
+  # Expressão que gera qualquer tipo de saída 
+  # que o renderTYPE espera
 })
 ```
 O lado esquerdo do operador de atribuição (<code><-</code>), <code>output$ID</code>, indica que você está fornecendo a receita da saída do Shiny com o ID correspondente. O lado direito da atribuição usa uma função de renderização específica para concluir algum código que você fornece; no exemplo acima, usamos <code>renderPrint()</code> e <code>renderTable()</code> para encerrar nossa lógica específica do aplicativo.
