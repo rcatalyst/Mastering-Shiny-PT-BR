@@ -143,3 +143,40 @@ Execute o aplicativo novamente e brinque, observando o que acontece com a saída
 Figura 2.3: Agora que fornecemos uma função de servidor que se conecta e insere, temos um aplicativo totalmente funcional
 
 Observe que não escrevi nenhum código que verifique se há alterações no <code>input$dataset</code> e atualize explicitamente os dois outputs. Isso ocorre porque as saídas são reativas: elas recalculam automaticamente quando as entradas são alteradas. Como os dois blocos de código de renderização que escrevi usavam o <code>input$dataset</code>, sempre que o valor de <code>input$dataset</code> muda (ou seja, o usuário altera sua seleção na UI), ambas as saídas recalculam e atualizam no navegador.
+
+2.6 Reduzindo a duplicação com expressões reativas
+
+Mesmo neste exemplo simples, temos algum código duplicado: a seguinte linha está presente nas duas saídas.
+
+```
+dataset <- get(input$dataset, "package:datasets")
+```
+
+Em todo tipo de programação, é uma prática ruim ter código duplicado; pode ser um desperdício computacional e, mais importante, aumenta a dificuldade de manter ou depurar o código. Não é tão importante aqui, mas eu queria ilustrar a ideia básica em um contexto muito simples.
+
+No script R tradicional, usamos duas técnicas para lidar com código duplicado: capturamos o valor usando uma variável ou capturamos o cálculo com uma função. Infelizmente, nenhuma dessas abordagens funciona aqui, por razões que você aprenderá na Seção 14.2, e precisamos de um novo mecanismo: expressões reativas.
+
+Você cria uma expressão reativa envolvendo um bloco de código em <code>reactive({...})</code> e atribuindo-o a uma variável e usando uma expressão reativa chamando-a como uma função. Mas, embora pareça que você está chamando uma função, uma expressão reativa tem uma diferença importante: ela é executada apenas na primeira vez em que é chamada e, em seguida, armazena em cache o resultado até precisar ser atualizada.
+
+Podemos potencializar nosso <code>server()</code> para usar expressões reativas, como mostrado abaixo. O aplicativo se comporta de forma idêntica, mas funciona de forma um pouco mais eficiente, pois só precisa recuperar o conjunto de dados uma vez, e não duas.
+
+```
+server <- function(input, output, session) {
+  dataset <- reactive({
+    get(input$dataset, "package:datasets")
+  })
+
+  output$summary <- renderPrint({
+    summary(dataset())
+  })
+  
+  output$table <- renderTable({
+    dataset()
+  })
+}
+```
+
+Voltaremos à programação reativa várias vezes, mas mesmo com um conhecimento superficial de entradas, saídas e expressões reativas, é possível criar aplicativos Shiny bastante úteis!
+
+
+
