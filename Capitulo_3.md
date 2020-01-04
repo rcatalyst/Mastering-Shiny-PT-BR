@@ -179,4 +179,13 @@ ui <- fluidPage(
 
 <img src="https://d33wubrfki0l68.cloudfront.net/91ce7a6b83974609e9838c57019645f25b8fd2cd/8a1d2/screenshots/basic-ui/action.png" style="display: block; margin: auto;" width="600">
 
+3.2.8 Exercícios
+
+1. Quando o espaço é escasso, é útil rotular as caixas de texto usando um espaço reservado que aparece dentro da área de entrada de texto. Como você chama <code>textInput()</code> para gerar a UI abaixo?
+
+<img src="https://d33wubrfki0l68.cloudfront.net/0250dd2b285e770d5fd2a66670a6604775bb7f1e/42653/screenshots/basic-ui/placeholder.png" style="display: block; margin: auto;" width="600">
+
+2. Leia atentamente a documentação de <code>sliderInput()</code> para descobrir como criar um slider de data, conforme mostrado abaixo.
+
+
 
