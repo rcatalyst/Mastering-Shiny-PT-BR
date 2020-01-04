@@ -132,5 +132,5 @@ output$ID <- renderTYPE({
   # Espera de renderTYPE
 })
 ```
-O lado esquerdo do operador de atribuição (<code><-</code>), output$ID, indica que você está fornecendo a receita da saída do Shiny com o ID correspondente. O lado direito da atribuição usa uma função de renderização específica para embrulhar algum código que você fornece; no exemplo acima, usamos <code>renderPrint()</code> e <code>renderTable()</code> para embrulhar nossa lógica específica do aplicativo.
+O lado esquerdo do operador de atribuição (<code><-</code>), <code>output$ID</code>, indica que você está fornecendo a receita da saída do Shiny com o ID correspondente. O lado direito da atribuição usa uma função de renderização específica para embrulhar algum código que você fornece; no exemplo acima, usamos <code>renderPrint()</code> e <code>renderTable()</code> para embrulhar nossa lógica específica do aplicativo.
 
