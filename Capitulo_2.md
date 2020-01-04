@@ -141,3 +141,5 @@ Execute o aplicativo novamente e brinque, observando o que acontece com a saída
 <img src="https://d33wubrfki0l68.cloudfront.net/bb766cc235f190fd2c28d8f011edb7f9cbe526a7/4a065/screenshots/basic-app/server.png" alt="Now that we've provided a server function that connects and inputs, we have a fully functional app" width="701">
 
 Figura 2.3: Agora que fornecemos uma função de servidor que se conecta e insere, temos um aplicativo totalmente funcional
+
+Observe que não escrevi nenhum código que verifique se há alterações no <code>input$dataset</code> e atualize explicitamente os dois outputs. Isso ocorre porque as saídas são reativas: elas recalculam automaticamente quando as entradas são alteradas. Como os dois blocos de código de renderização que escrevi usavam o <code>input$dataset</code>, sempre que o valor de <code>input$dataset</code> muda (ou seja, o usuário altera sua seleção na UI), ambas as saídas recalculam e atualizam no navegador.
