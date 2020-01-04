@@ -266,7 +266,7 @@ server <- function(input, output, session) {
 ```
 <hr> 
 
-1. A Shiny se esforça para oferecer suporte a todos os navegadores modernos, e você pode ver o conjunto atualmente suportado em https://www.rstudio.com/about/platform-support/. Observe que as versões do Internet Explorer anteriores ao IE11 não são compatíveis ao executar o Shiny diretamente da sua sessão R., No entanto, os aplicativos Shiny implantados no Shiny Server ou no ShinyApps.io podem funcionar com o IE10 (as versões anteriores do IE não são mais suportadas).↩
+1. O Shiny se esforça para oferecer suporte a todos os navegadores modernos, e você pode ver o conjunto atualmente suportado em https://www.rstudio.com/about/platform-support/. Observe que as versões do Internet Explorer anteriores ao IE11 não são compatíveis ao executar o Shiny diretamente da sua sessão R., No entanto, os aplicativos Shiny implantados no Shiny Server ou no ShinyApps.io podem funcionar com o IE10 (as versões anteriores do IE não são mais suportadas).↩
 
 
 
