@@ -36,4 +36,20 @@ sliderInput("min", "Limit (minimum)", value = 50, min = 0, max = 100)
 
 As seções a seguir descrevem as entradas incorporadas ao Shiny, agrupadas livremente de acordo com o tipo de controle que eles criam. O objetivo é fornecer uma visão geral rápida de suas opções, não descrever exaustivamente todos os argumentos. Mostrarei os parâmetros mais importantes para cada controle abaixo, mas você precisará ler a documentação para obter detalhes completos.
 
+3.2.2 Texto livre
+
+Colete pequenas quantidades de texto com <code>textInput()</code>, senhas com <code>passwordInput()</code> e parágrafos de texto com <code>textAreaInput()</code>.
+
+```
+ui <- fluidPage(
+  textInput("name", "What's your name?"),
+  passwordInput("password", "What's your password?"),
+  textAreaInput("story", "Tell me about yourself", rows = 3)
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/7d05eded3bee980b9e441f8638890258c45e81b9/a2aaf/screenshots/basic-ui/free-text.png" style="display: block; margin: auto;" width="600">
+
+Se você deseja garantir que o texto tenha determinadas propriedades, use <code>validate()</code>, ao qual voltaremos no capítulo 7.
+
 
