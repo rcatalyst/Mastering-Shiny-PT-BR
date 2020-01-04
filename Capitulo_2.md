@@ -134,3 +134,9 @@ output$ID <- renderTYPE({
 ```
 O lado esquerdo do operador de atribuição (<code><-</code>), <code>output$ID</code>, indica que você está fornecendo a receita da saída do Shiny com o ID correspondente. O lado direito da atribuição usa uma função de renderização específica para concluir algum código que você fornece; no exemplo acima, usamos <code>renderPrint()</code> e <code>renderTable()</code> para encerrar nossa lógica específica do aplicativo.
 
+Cada função <code>render*</code> foi projetada para funcionar com um tipo específico de saída que é passado para uma função <code>*Output</code>. Nesse caso, estamos usando <code>renderPrint()</code> para capturar e exibir um resumo estatístico dos dados com texto de largura fixa (literalmente) e <code>renderTable()</code> para exibir o quadro de dados real em uma tabela.
+
+Execute o aplicativo novamente e brinque, observando o que acontece com a saída quando você altera uma entrada. A Figura 2.3 mostra o que você verá quando abrir o aplicativo.
+
+<img src="https://d33wubrfki0l68.cloudfront.net/bb766cc235f190fd2c28d8f011edb7f9cbe526a7/4a065/screenshots/basic-app/server.png" alt="Now that we've provided a server function that connects and inputs, we have a fully functional app" width="701">
+
