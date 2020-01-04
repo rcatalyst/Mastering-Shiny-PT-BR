@@ -166,4 +166,17 @@ ui <- fluidPage(
 
 <code>fileInput()</code> requer tratamento especial no lado do servidor e é discutido em detalhes no Capítulo 8.
 
+3.2.7 Botões de ação
+
+Deixe o usuário executar uma ação com <code>actionButton()</code> ou <code>actionLink()</code>. Eles são mais naturalmente associados a <code>observeEvent()</code> ou <code>eventReactive()</code> na função server; Ainda não discuti essas funções, mas voltaremos a elas no próximo capítulo.
+
+```
+ui <- fluidPage(
+  actionButton("click", "Click me!"),
+  actionButton("drink", "Drink me!", icon = icon("cocktail"))
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/91ce7a6b83974609e9838c57019645f25b8fd2cd/8a1d2/screenshots/basic-ui/action.png" style="display: block; margin: auto;" width="600">
+
 
