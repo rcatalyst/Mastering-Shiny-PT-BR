@@ -108,7 +108,7 @@ Em seguida, daremos vida às saídas definindo-as na função de servidor.
 
 Shiny usa programação reativa para tornar os aplicativos interativos. Você aprenderá mais sobre programação reativa no Capítulo 4, mas, por enquanto, esteja ciente de que isso envolve dizer ao Shiny como executar um cálculo, não ordenando que o Shiny o faça. É como a diferença entre dar a alguém uma receita e exigir que ela faça um sanduíche para você.
 
-Nesse caso simples, informaremos ao Shiny como preencher o <code>summary</code> e as <code>table</code> de saídas - fornecendo as "receitas" para esses resultados. Substitua sua função vazia de <code>server</code> por esta:
+Nesse caso simples, informaremos ao Shiny como preencher o <code>summary</code> e <code>table</code> de outputs - fornecendo as "receitas" para esses resultados. Substitua sua função vazia de <code>server</code> por esta:
 
 ```
 server <- function(input, output, session) {
