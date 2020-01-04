@@ -128,7 +128,7 @@ Quase toda saída que você escrever no Shiny seguirá o mesmo padrão:
 
 ```
 output$ID <- renderTYPE({
-  # Expression that generates whatever kind of output
-  # renderTYPE expects
+  # Expressão que gera qualquer tipo de output
+  # Espera de renderTYPE
 })
 ```
