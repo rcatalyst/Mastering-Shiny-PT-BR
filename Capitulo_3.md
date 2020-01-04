@@ -70,4 +70,19 @@ Geralmente, eu recomendo usar apenas sliders para pequenos intervalos ou casos e
 
 Sliders são extremamente personalizáveis ​​e há muitas maneiras de ajustar sua aparência. Consulte <code>?sliderInput</code> e https://shiny.rstudio.com/articles/sliders.html para obter mais detalhes.
 
+3.2.4 Datas
+
+Colete um único dia com <code>dateInput()</code> ou um intervalo de dois dias com <code>dateRangeInput()</code>. Eles fornecem um seletor de calendário conveniente, e argumentos adicionais como <code>datesdisabled</code> e <code>daysofweekdisabled</code> permitem restringir o conjunto de entradas válidas.
+
+```
+ui <- fluidPage(
+  dateInput("dob", "When were you born?"),
+  dateRangeInput("holiday", "When do you want to go on vacation next?")
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/eb6baa615a5c8d19a871626d6ce021bb1376f0a1/814a6/screenshots/basic-ui/date.png" style="display: block; margin: auto;" width="600">
+
+O formato da data, o idioma e o dia em que a semana começa são os padrões dos EUA. Se você estiver criando um aplicativo com um público internacional, defina o <code>format</code>, o <code>language</code> e o <code>weekstart</code> para que as datas sejam naturais para seus usuários.
+
 
