@@ -152,4 +152,18 @@ ui <- fluidPage(
 
 <img src="https://d33wubrfki0l68.cloudfront.net/ff021265e68d432ea7e3e574849a8f6a8f25b9b0/8dec7/screenshots/basic-ui/yes-no.png" style="display: block; margin: auto;" width="600">
 
+3.2.6 Uploads de arquivos
+
+Permita que o usuário faça upload de um arquivo com <code>fileInput()</code>:
+
+```
+ui <- fluidPage(
+  fileInput("upload", NULL)
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/92e2422e9b00cec1d6a852cbdb484071ce51ae4e/dacfd/screenshots/basic-ui/upload.png" style="display: block; margin: auto;" width="600">
+
+<code>fileInput()</code> requer tratamento especial no lado do servidor e é discutido em detalhes no Capítulo 8.
+
 
