@@ -101,7 +101,7 @@ ui <- fluidPage(
 
 <img src="https://d33wubrfki0l68.cloudfront.net/2605fed791b02e16d28d2c389df9130d349bf1b3/e49e2/screenshots/basic-ui/limited-choices.png" style="display: block; margin: auto;" width="600">
 
-Os botões de opção têm dois recursos interessantes: mostram todas as opções possíveis, tornando-os adequados para listas curtas e, por meio dos argumentos <code>choiceNames</code> / <code>choiceValues</code>, eles podem exibir outras opções além do texto sem formatação.
+Os radio buttons têm dois recursos interessantes: mostram todas as opções possíveis, tornando-os adequados para listas curtas e, por meio dos argumentos <code>choiceNames</code> / <code>choiceValues</code>, eles podem exibir outras opções além do texto sem formatação.
 
 ```
 ui <- fluidPage(
