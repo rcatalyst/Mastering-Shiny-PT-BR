@@ -1,5 +1,5 @@
 
-3.0 Capítulo 3 UI Básica
+3.0 UI Básica
 
 3.1 Introdução
 
