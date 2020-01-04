@@ -85,4 +85,71 @@ ui <- fluidPage(
 
 O formato da data, o idioma e o dia em que a semana começa são os padrões dos EUA. Se você estiver criando um aplicativo com um público internacional, defina o <code>format</code>, o <code>language</code> e o <code>weekstart</code> para que as datas sejam naturais para seus usuários.
 
+3.2.5 Escolhas limitadas
+
+Existem duas abordagens diferentes para permitir ao usuário escolher entre um conjunto pré-especificado de opções: <code>selectInput()</code> e <code>radioButtons()</code>.
+
+
+```
+animals <- c("dog", "cat", "mouse", "bird", "other", "I hate animals")
+
+ui <- fluidPage(
+  selectInput("state", "What's your favourite state?", state.name),
+  radioButtons("animal", "What's your favourite animal?", animals)
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/2605fed791b02e16d28d2c389df9130d349bf1b3/e49e2/screenshots/basic-ui/limited-choices.png" style="display: block; margin: auto;" width="600">
+
+Os botões de opção têm dois recursos interessantes: mostram todas as opções possíveis, tornando-os adequados para listas curtas e, por meio dos argumentos <code>choiceNames</code> / <code>choiceValues</code>, eles podem exibir outras opções além do texto sem formatação.
+
+```
+ui <- fluidPage(
+  radioButtons("rb", "Choose one:",
+    choiceNames = list(
+      icon("angry"),
+      icon("smile"),
+      icon("sad-tear")
+    ),
+    choiceValues = list("angry", "happy", "sad")
+  )
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/dbe9e03aec37653f1244e95edf4f29c48135bfa5/e7044/screenshots/basic-ui/radio-icon.png" style="display: block; margin: auto;" width="600">
+
+Os Dropdowns criados com <code>selectInput()</code> ocupam a mesma quantidade de espaço, independentemente do número de opções, tornando-as mais adequadas para opções mais longas. Você também pode definir <code>multiple = TRUE</code> para permitir que o usuário selecione vários elementos.
+
+```
+ui <- fluidPage(
+  selectInput(
+    "state", "What's your favourite state?", state.name,
+    multiple = TRUE
+  )
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/c53795ad09b7866f0ed7adc1b3adabdd6fc120db/437be/images/basic-ui/multi-select.png" style="display: block; margin: auto;" width="234">
+
+Não há como selecionar vários valores com os radio buttons, mas há uma alternativa conceitualmente semelhante: <code>checkboxGroupInput()</code>.
+
+```
+ui <- fluidPage(
+  checkboxGroupInput("animal", "What animals do you like?", animals)
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/d3d61d703bac03a0d2823da98e2dbba03d6619d4/3276f/screenshots/basic-ui/multi-radio.png" style="display: block; margin: auto;" width="600">
+
+Se você deseja uma única caixa de seleção para uma única pergunta sim/não, use <code>checkboxInput()</code>:
+
+```
+ui <- fluidPage(
+  checkboxInput("cleanup", "Clean up?", value = TRUE),
+  checkboxInput("shutdown", "Shutdown?")
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/ff021265e68d432ea7e3e574849a8f6a8f25b9b0/8dec7/screenshots/basic-ui/yes-no.png" style="display: block; margin: auto;" width="600">
+
 
