@@ -300,7 +300,7 @@ server <- function(input, output, session) {
 
 Por padrão, <code>plotOutput()</code> ocupará toda a largura de seu contêiner (mais sobre isso em breve) e terá 400 pixels de altura. Você pode substituir esses padrões pelos argumentos de <code>height</code> e <code>width</code>.
 
-Os gráficos são especiais porque são saídas que também podem atuar como entradas. <code>plotOutput()</code> possui vários argumentos como <code>click</code>, <code>dblclick</code> e <code>hover</code>. Se você passar essas strings, como <code>click = "plot_click"</code>, elas criarão uma entrada reativa (<code>input$plot_click</code>) que você pode usar para lidar com a interação do usuário na plotagem. Voltaremos aos gráficos interativos em Shiny no capítulo XYZ.
+Os gráficos são especiais porque são saídas que também podem atuar como entradas. <code>plotOutput()</code> possui vários argumentos como <code>click</code>, <code>dblclick</code> e <code>hover</code>. Se você passar como strings estas <code>click = "plot_click"</code>, elas criarão uma entrada reativa (<code>input$plot_click</code>) que você pode usar para lidar com a interação do usuário na plotagem. Voltaremos aos gráficos interativos em Shiny no capítulo XYZ.
 
 
 
