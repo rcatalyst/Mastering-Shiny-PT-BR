@@ -205,4 +205,56 @@ As saídas na UI criam espaços reservados posteriormente preenchidos pela funç
 
 Cada função de <code>output</code> no front-end é acoplada a uma função <code>render</code> no back-end. Existem três tipos principais de output, correspondentes às três coisas que você geralmente inclui em um relatório: texto, tabelas e gráficos. As seções a seguir mostram os conceitos básicos das funções de output no front end, juntamente com as funções <code>render</code> correspondentes no back end.
 
+3.3.1 Texto
+
+Use <code>textOutput()</code> para saída de texto regular e <code>verbatimTextOutput()</code> para código fixo e saída no console.
+
+```
+ui <- fluidPage(
+  textOutput("text"),
+  verbatimTextOutput("code")
+)
+server <- function(input, output, session) {
+  output$text <- renderText({ 
+    "Hello friend!" 
+  })
+  output$code <- renderPrint({ 
+    summary(1:10) 
+  })
+}
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/61f37c119d66f0b25bb834d6773274856b764727/6beee/screenshots/basic-ui/output-text.png" style="display: block; margin: auto;" width="600">
+
+Observe que o <code>{}</code> não é necessário nas funções de renderização, a menos que você precise executar várias linhas de código. Você também pode escrever a função server de forma mais compacta. Eu acho que esse geralmente é um bom estilo, pois você deve fazer o mínimo possível de cálculo em suas funções de renderização.
+
+```
+server <- function(input, output, session) {
+  output$text <- renderText("Hello friend!")
+  output$code <- renderPrint(summary(1:10))
+}
+```
+
+Observe que existem duas funções de renderização que podem ser usadas com uma das funções de saída de texto:
+
+<ul>
+<li><code>renderText()</code> que exibe o texto retornado pelo código.</li>
+<li><code>renderPrint()</code> que exibe o texto impresso pelo código.</li>
+</ul>
+
+Para ajudar a entender a diferença, examine a seguinte função. Ela imprime <code>a</code> e <code>b</code>, e retorna <code>"c"</code>. Uma função pode imprimir várias coisas, mas pode retornar apenas um único valor.
+
+```
+print_and_return <- function() {
+  print("a")
+  print("b")
+  "c"
+}
+x <- print_and_return()
+#> [1] "a"
+#> [1] "b"
+x 
+#> [1] "c"
+```
+
 
