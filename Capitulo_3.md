@@ -372,5 +372,54 @@ Parece muito chato porque não há conteúdo, mas nos bastidores, <code>fluidPag
 
 Tecnicamente, <code>fluidPage()</code> é tudo o que você precisa para um aplicativo, porque você pode colocar entradas e saídas diretamente dentro dele. Mas, embora isso seja bom para aprender o básico do Shiny, despejar todas as entradas e saídas em um só lugar não parece muito bom, então você precisa aprender mais funções de layout. Aqui, apresentarei duas estruturas comuns, uma página com barra lateral e um aplicativo com várias linhas, e depois terminaremos com uma rápida discussão de temas.
 
+3.4.3 Página com barra lateral
+
+<code>sidebarLayout()</code>, junto com <code>titlePanel()</code>, <code>sidebarPanel()</code> e <code>mainPanel()</code>, facilita a criação de um layout de duas colunas com entradas à esquerda e saídas à direita. O código básico é mostrado abaixo; ele gera a estrutura mostrada na Figura 3.1.
+
+```
+fluidPage(
+  titlePanel(
+    # app title/description
+  ),
+  sidebarLayout(
+    sidebarPanel(
+      # inputs
+    ),
+    mainPanel(
+      # outputs
+    )
+  )
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/bb7351f4082fffdad9e4c199bc12190d104898cb/e2ac8/diagrams/basic-ui/sidebar.png" alt="Structure of a basic app with sidebar" width="336">
+
+Figura 3.1: Estrutura de um aplicativo básico com barra lateral
+
+O exemplo a seguir mostra como usar esse layout para criar um aplicativo muito simples que demonstra o Teorema do Limite Central. Se você mesmo executar esse aplicativo, poderá ver como o aumento do número de amostras torna uma distribuição muito semelhante a uma distribuição normal.
+
+```
+ui <- fluidPage(
+  headerPanel("Central limit theorem"),
+  sidebarLayout(
+    sidebarPanel(
+      numericInput("m", "Number of samples:", 2, min = 1, max = 100)
+    ),
+    mainPanel(
+      plotOutput("hist")
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  output$hist <- renderPlot({
+    means <- replicate(1e4, mean(runif(input$m)))
+    hist(means, breaks = 20)
+  })
+}
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/a3c6cfafe8e207655a8166c64780151c3bfa0c86/39327/screenshots/basic-ui/sidebar.png" style="display: block; margin: auto;" width="100%">
+
 
 
