@@ -264,8 +264,8 @@ x
 Existem duas opções para exibir data frames em tabelas:
 
 <ul>
-<li><code>tableOutput()<code> e <code>renderTable()<code> processam uma tabela estática de dados, mostrando todos os dados de uma só vez.</li>
-<li><code>dataTableOutput()</code> e <code>renderDataTable()<code> processam uma tabela dinâmica, mostrando um número fixo de linhas junto com os controles para alterar quais linhas estão visíveis.</li>
+<li><code>tableOutput()</code> e <code>renderTable()</code> processam uma tabela estática de dados, mostrando todos os dados de uma só vez.</li>
+<li><code>dataTableOutput()</code> e <code>renderDataTable()</code> processam uma tabela dinâmica, mostrando um número fixo de linhas junto com os controles para alterar quais linhas estão visíveis.</li>
 </ul>
 
 <code>tableOutput()</code> é mais útil para resumos pequenos e fixos (por exemplo, coeficientes de modelo); <code>dataTableOutput()</code> é mais apropriado se você deseja expor um data frame completo para o usuário.
