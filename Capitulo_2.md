@@ -77,7 +77,7 @@ Você pode parar o aplicativo e retornar o acesso ao console usando qualquer uma
 
 <ul>
     <li>Clique no ícone de stop na barra de ferramentas do console R.</li>
-    <li>Clique no console e pressione Esc (ou pressione Ctrl + C se não estiver usando o RStudio).</li>
+    <li>Clique no console e pressione <code>Esc</code> (ou pressione <code>Ctrl</code> + <code>C</code> se não estiver usando o RStudio).</li>
     <li>Feche a janela do aplicativo Shiny.</li>
 </ul>
 
@@ -99,9 +99,9 @@ ui <- fluidPage(
 Este exemplo usa quatro novas funções:
 
 <ul>
-    <li>fluidPage() é uma função de layout que configura a estrutura visual básica da página. Você aprenderá mais sobre eles na Seção 3.4.</li>
-    <li>selectInput() é um controle de entrada que permite ao usuário interagir com o aplicativo fornecendo um valor. Nesse caso, é uma caixa de seleção com o rótulo "Dataset" e permite escolher um dos conjuntos de dados integrados que acompanham o R. Você aprenderá mais sobre as entradas na Seção 3.2.</li>
-    <li>verbatimTextOutput() e tableOutput() são controles de saída que informam ao Shiny onde colocar a saída renderizada (veremos como em outro momento). verbatimTextOutput() exibe código e tableOutput exibe tabelas. Você aprenderá mais sobre saídas na Seção 3.3.</li>
+    <li><code>fluidPage()</code> é uma função de layout que configura a estrutura visual básica da página. Você aprenderá mais sobre eles na Seção 3.4.</li>
+    <li><code>selectInput()</code> é um controle de entrada que permite ao usuário interagir com o aplicativo fornecendo um valor. Nesse caso, é uma caixa de seleção com o rótulo "Dataset" e permite escolher um dos conjuntos de dados integrados que acompanham o R. Você aprenderá mais sobre as entradas na Seção 3.2.</li>
+    <li><code>verbatimTextOutput()</code> e <code>tableOutput()</code> são controles de saída que informam ao Shiny onde colocar a saída renderizada (veremos como em outro momento). <code>verbatimTextOutput()</code> exibe código e <code>tableOutput</code> exibe tabelas. Você aprenderá mais sobre saídas na Seção 3.3.</li>
 </ul>
 
 Funções de layout, entradas e saídas têm usos diferentes, mas são basicamente as mesmas: são todas maneiras sofisticadas de gerar HTML e, se você chamar qualquer uma delas fora de um aplicativo Shiny, verá HTML impresso no console. Não tenha medo de bisbilhotar para ver como esses vários layouts e controles funcionam sob o capô. Você aprenderá mais sobre os detalhes no capítulo 13.
