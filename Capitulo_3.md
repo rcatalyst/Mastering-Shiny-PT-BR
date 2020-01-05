@@ -421,5 +421,36 @@ server <- function(input, output, session) {
 
 <img src="https://d33wubrfki0l68.cloudfront.net/a3c6cfafe8e207655a8166c64780151c3bfa0c86/39327/screenshots/basic-ui/sidebar.png" style="display: block; margin: auto;" width="100%">
 
+3.4.4 Várias linhas
+
+Sob o capô, o <code>sidebarLayout()</code> é construído sobre um layout flexível de várias linhas, que você pode usar diretamente para criar aplicativos visualmente mais complexos. Como sempre, você começa com <code>fluidPage()</code>. Em seguida, você cria linhas com <code>fluidRow()</code> e colunas com <code>column()</code>. O modelo a seguir gera a estrutura mostrada na Figura 3.2.
+
+```
+fluidPage(
+  fluidRow(
+    column(4, 
+      ...
+    ),
+    column(8, 
+      ...
+    )
+  ),
+  fluidRow(
+    column(6, 
+      ...
+    ),
+    column(6, 
+      ...
+    )
+  )
+)
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/bb9dffe04f31627d7eb552b73227f7315ca20585/de3d9/diagrams/basic-ui/multirow.png" alt="The structure underlying a simple multi-row app" width="336">
+
+Figura 3.2: A estrutura subjacente a um aplicativo simples de várias linhas
+
+Observe que o primeiro argumento da <code>column()<code> é a largura, e a largura de cada linha deve adicionar até 12. Isso oferece flexibilidade substancial, pois você pode criar facilmente layouts de 2, 3 ou 4 colunas (mais do que isso começa a ficar apertado) ou use colunas estreitas para criar espaçadores.
+
 
 
