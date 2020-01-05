@@ -51,7 +51,10 @@ Existem algumas maneiras de executar este aplicativo:
     <li>Clique no botão Run App na barra de ferramentas do documento.</li>
     
 <img src="https://d33wubrfki0l68.cloudfront.net/23a8bff2e02f95092ff3b3ea6bc524020aef7de3/2db27/images/basic-app/run-app.png" style="display: block; margin: auto auto auto 0;" width="74">
-    
+
+</ul>
+  
+<ul>
     <li>Use um atalho de teclado: Cmd/Ctrl + Shift + Enter.</li>
     <li>Se você não estiver usando o RStudio, poderá usar o source() no documento inteiro, ou chamar shiny::runApp() com o caminho para o diretório que contém o app.R.</li>
 </ul>
