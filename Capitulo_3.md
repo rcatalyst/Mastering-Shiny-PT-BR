@@ -201,4 +201,8 @@ numericInput("number", "Select a value", value = 150, min = 0, max = 1000, step 
 
 3.3 Outputs
 
+As saídas na UI criam espaços reservados posteriormente preenchidos pela função server. Assim como as entradas, as saídas recebem um ID exclusivo como primeiro argumento: se a especificação da UI criar uma saída com o ID "plot", você a acessará na função server com <code>output$plot</code>.
+
+Cada função de <code>output</code> no front-end é acoplada a uma função <code>render</code> no back-end. Existem três tipos principais de output, correspondentes às três coisas que você geralmente inclui em um relatório: texto, tabelas e gráficos. As seções a seguir mostram os conceitos básicos das funções de output no front end, juntamente com as funções <code>render</code> correspondentes no back end.
+
 
