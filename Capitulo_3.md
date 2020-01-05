@@ -483,5 +483,12 @@ theme_demo("united")
 
 Como você pode ver, o tema do seu aplicativo é bastante direto: você só precisa usar o argumento do tema para <code>fluidPage()</code>. Para descobrir quais temas estão disponíveis e como eles são, dê uma olhada no aplicativo seletor de temas Shiny em https://shiny.rstudio.com/gallery/shiny-theme-selector.html.
 
+3.4.6 Exercícios
+
+<ol>
+<li>Modifique o aplicativo Teorema do limite central para que a barra lateral fique à direita e não à esquerda.</li>
+<li>Navegue pelos temas disponíveis no pacote shinythemes, escolha um tema atraente e aplique-o no aplicativo Teorema do limite central.</li>
+</ol>
+
 
 
