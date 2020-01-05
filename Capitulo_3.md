@@ -311,7 +311,7 @@ Você pode permitir que o usuário baixe um arquivo com <code>downloadButton()</
 <ol>
   <li>Recrie o aplicativo Shiny da seção de plotagens, dessa vez definindo a altura para 300px e a largura para 700px.</li>
   <li>Adicione uma plotagem adicional à direita da plotagem existente e dimensione-a para que cada plot ocupe metade da largura do aplicativo.</li>
-  <li>Atualize as opções para <code>renderDataTable()</code> abaixo para que a tabela seja exibida, mas nada mais, ou seja, remova os comandos de pesquisa, ordenação e filtragem. Você precisará ler <code>?RenderDataTable</code> e revisar as opções em https://datatables.net/reference/option/.</li>
+  <li>Atualize as opções da <code>renderDataTable()</code> abaixo para que a tabela seja exibida, mas nada mais, ou seja, remova os comandos de pesquisa, ordenação e filtragem. Você precisará ler <code>?RenderDataTable</code> e revisar as opções em https://datatables.net/reference/option/.</li>
 </ol>
 
 ```
