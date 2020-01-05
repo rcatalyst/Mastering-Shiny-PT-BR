@@ -36,22 +36,25 @@ Dica do RStudio: você pode criar facilmente um novo diretório e um arquivo <co
 
 Este é um aplicativo Shiny completo, embora trivial! Observando atentamente o código acima, nosso <code>app.R</code> faz quatro coisas:
 
-    1. Ele chama library(shiny) para carregar o pacote Shiny.
-    2. Ele define a interface do usuário, a página HTML com a qual os humanos interagem. Nesse caso, é uma página que contém as palavras "Olá, mundo!".
-    3. Ele especifica o comportamento do nosso aplicativo, definindo uma função server. No momento, ele está vazio, então nosso aplicativo não faz nada, mas voltaremos a revisar isso em breve.
-    4. Ele executa o shinyApp(ui, server) para construir e iniciar um aplicativo Shiny a partir da interface do usuário e do servidor.
-
+<ol>
+    <li>Ele chama library(shiny) para carregar o pacote Shiny.</li>
+    <li>Ele define a interface do usuário, a página HTML com a qual os humanos interagem. Nesse caso, é uma página que contém as palavras "Olá, mundo!".</li>
+    <li>Ele especifica o comportamento do nosso aplicativo, definindo uma função server. No momento, ele está vazio, então nosso aplicativo não faz nada, mas voltaremos a revisar isso em breve.</li>
+    <li>Ele executa o shinyApp(ui, server) para construir e iniciar um aplicativo Shiny a partir da interface do usuário e do servidor.</li>
+</ol>
 
 2.3 Executando e parando
 
 Existem algumas maneiras de executar este aplicativo:
 
-    * Clique no botão Run App na barra de ferramentas do documento.
+<ul>
+    <li>Clique no botão Run App na barra de ferramentas do documento.</li>
     
 <img src="https://d33wubrfki0l68.cloudfront.net/23a8bff2e02f95092ff3b3ea6bc524020aef7de3/2db27/images/basic-app/run-app.png" style="display: block; margin: auto auto auto 0;" width="74">
     
-    * Use um atalho de teclado: Cmd/Ctrl + Shift + Enter.
-    * Se você não estiver usando o RStudio, poderá usar o source() no documento inteiro, ou chamar shiny::runApp() com o caminho para o diretório que contém o app.R.
+    <li>Use um atalho de teclado: Cmd/Ctrl + Shift + Enter.</li>
+    <li>Se você não estiver usando o RStudio, poderá usar o source() no documento inteiro, ou chamar shiny::runApp() com o caminho para o diretório que contém o app.R.</li>
+</ul>
 
 Escolha uma dessas opções e verifique se você vê o mesmo aplicativo da Figura 2.1. Parabéns! Você criou seu primeiro aplicativo Shiny.
 
@@ -69,9 +72,11 @@ Observe também que o R está ocupado: o prompt R não está visível e a barra 
 
 Você pode parar o aplicativo e retornar o acesso ao console usando qualquer uma destas opções:
 
-    * Clique no ícone de stop na barra de ferramentas do console R.
-    * Clique no console e pressione Esc (ou pressione Ctrl + C se não estiver usando o RStudio).
-    * Feche a janela do aplicativo Shiny.
+<ul>
+    <li>Clique no ícone de stop na barra de ferramentas do console R.</li>
+    <li>Clique no console e pressione Esc (ou pressione Ctrl + C se não estiver usando o RStudio).</li>
+    <li>Feche a janela do aplicativo Shiny.</li>
+</ul>
 
 O fluxo de trabalho básico do desenvolvimento de aplicativos Shiny é escrever um código, iniciar o aplicativo, experimentar o aplicativo, reproduzi-lo, escrever um pouco mais de código, ... Você aprenderá outros padrões posteriormente no Capítulo 6.
 
@@ -90,9 +95,11 @@ ui <- fluidPage(
 ```
 Este exemplo usa quatro novas funções:
 
-    * fluidPage() é uma função de layout que configura a estrutura visual básica da página. Você aprenderá mais sobre eles na Seção 3.4.
-    * selectInput() é um controle de entrada que permite ao usuário interagir com o aplicativo fornecendo um valor. Nesse caso, é uma caixa de seleção com o rótulo "Dataset" e permite escolher um dos conjuntos de dados integrados que acompanham o R. Você aprenderá mais sobre as entradas na Seção 3.2.
-    * verbatimTextOutput() e tableOutput() são controles de saída que informam ao Shiny onde colocar a saída renderizada (veremos como em outro momento). verbatimTextOutput() exibe código e tableOutput exibe tabelas. Você aprenderá mais sobre saídas na Seção 3.3.
+<ul>
+    <li>fluidPage() é uma função de layout que configura a estrutura visual básica da página. Você aprenderá mais sobre eles na Seção 3.4.</li>
+    <li>selectInput() é um controle de entrada que permite ao usuário interagir com o aplicativo fornecendo um valor. Nesse caso, é uma caixa de seleção com o rótulo "Dataset" e permite escolher um dos conjuntos de dados integrados que acompanham o R. Você aprenderá mais sobre as entradas na Seção 3.2.</li>
+    <li>verbatimTextOutput() e tableOutput() são controles de saída que informam ao Shiny onde colocar a saída renderizada (veremos como em outro momento). verbatimTextOutput() exibe código e tableOutput exibe tabelas. Você aprenderá mais sobre saídas na Seção 3.3.</li>
+</ul>
 
 Funções de layout, entradas e saídas têm usos diferentes, mas são basicamente as mesmas: são todas maneiras sofisticadas de gerar HTML e, se você chamar qualquer uma delas fora de um aplicativo Shiny, verá HTML impresso no console. Não tenha medo de bisbilhotar para ver como esses vários layouts e controles funcionam sob o capô. Você aprenderá mais sobre os detalhes no capítulo 13.
 
