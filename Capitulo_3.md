@@ -23,8 +23,10 @@ Todas as funções de entrada têm o mesmo primeiro argumento: <code>inputId</co
 
 O <code>inputId</code> possui duas restrições:
 
-    * Deve ser uma sequência simples que contenha apenas letras, números e sublinhados (não são permitidos espaços, traços, pontos ou outros caracteres especiais!). Nomeie como você nomearia uma variável em R.
-    * Deve ser único. Se não for exclusivo, você não terá como se referir a esse controle na função do servidor!
+<ul>
+    <li>Deve ser uma sequência simples que contenha apenas letras, números e sublinhados (não são permitidos espaços, traços, pontos ou outros caracteres especiais!). Nomeie como você nomearia uma variável em R.</li>
+    <li>Deve ser único. Se não for exclusivo, você não terá como se referir a esse controle na função do servidor!</li>
+</ul>
 
 A maioria das funções de entrada possui um segundo parâmetro chamado <code>label</code>. Isso é usado para criar um rótulo legível por humanos para o controle. O Shiny não impõe restrições a essa sequência, mas você deve pensar cuidadosamente sobre isso para garantir que seu aplicativo possa ser usado por humanos! O terceiro parâmetro geralmente é o valor, que, sempre que possível, permite definir o valor padrão. Os parâmetros restantes são exclusivos para o controle.
 
