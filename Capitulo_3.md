@@ -283,5 +283,24 @@ server <- function(input, output, session) {
 
 <img src="https://d33wubrfki0l68.cloudfront.net/2fe4c674645896fa18d345ad162f479434746dd2/78343/screenshots/basic-ui/output-table.png" style="display: block; margin: auto;" width="100%">
 
+3.3.3 Plots
+
+Você pode exibir qualquer tipo de gráfico R (base, ggplot2 ou outro) com <code>plotOutput()</code> e <code>renderPlot()</code>:
+
+```
+ui <- fluidPage(
+  plotOutput("plot", width = "400px")
+)
+server <- function(input, output, session) {
+  output$plot <- renderPlot(plot(1:5))
+}
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/2bc961497fb491d1fc1ace9f30e06245aca0da67/daa6c/screenshots/basic-ui/output-plot.png" style="display: block; margin: auto;" width="600">
+
+Por padrão, <code>plotOutput()</code> ocupará toda a largura de seu contêiner (mais sobre isso em breve) e terá 400 pixels de altura. Você pode substituir esses padrões pelos argumentos de <code>height</code> e <code>width</code>.
+
+Os gráficos são especiais porque são saídas que também podem atuar como entradas. <code>plotOutput()</code> possui vários argumentos como <code>click</code>, <code>dblclick</code> e <code>hover</code>. Se você passar essas strings, como <code>click = "plot_click"</code>, elas criarão uma entrada reativa (<code>input$plot_click</code>) que você pode usar para lidar com a interação do usuário na plotagem. Voltaremos aos gráficos interativos em Shiny no capítulo XYZ.
+
 
 
