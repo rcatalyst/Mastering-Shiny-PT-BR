@@ -199,3 +199,6 @@ ui <- fluidPage(
 numericInput("number", "Select a value", value = 150, min = 0, max = 1000, step = 50)
 ```
 
+3.3 Outputs
+
+
