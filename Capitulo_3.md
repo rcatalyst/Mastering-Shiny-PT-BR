@@ -306,5 +306,23 @@ Os gráficos são especiais porque são saídas que também podem atuar como ent
 
 Você pode permitir que o usuário baixe um arquivo com <code>downloadButton()</code> ou <code>downloadLink()</code>. Isso exige novas técnicas na função server, portanto, voltaremos a isso no Capítulo 8.
 
+3.3.5 Exercícios
+
+<ol>
+  <li>Recrie o aplicativo Shiny da seção de plotagens, dessa vez definindo a altura para 300px e a largura para 700px.</li>
+  <li>Adicione uma plotagem adicional à direita da plotagem existente e dimensione-a para que cada plot ocupe metade da largura do aplicativo.</li>
+  <li>Atualize as opções para <code>renderDataTable()</code> abaixo para que a tabela seja exibida, mas nada mais, ou seja, remova os comandos de pesquisa, ordenação e filtragem. Você precisará ler <code>?RenderDataTable</code> e revisar as opções em https://datatables.net/reference/option/.</li>
+</ol>
+
+```
+ui <- fluidPage(
+  dataTableOutput("table")
+)
+server <- function(input, output, session) {
+  output$table <- renderDataTable(mtcars, options = list(pageLength = 5))
+}
+```
+
+
 
 
