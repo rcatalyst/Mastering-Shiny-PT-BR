@@ -258,6 +258,7 @@ x <- print_and_return()
 x 
 #> [1] "c"
 ```
+
 3.3.2 Tabelas
 
 Existem duas opções para exibir data frames em tabelas:
