@@ -362,5 +362,15 @@ fluidPage(
 
 Mesmo sem saber nada sobre as funções de layout, você pode ler os nomes das funções para adivinhar como será esse aplicativo. Você pode imaginar que esse código gerará um design clássico de aplicativo: uma barra de título na parte superior, seguida por uma barra lateral (contendo um slider), com o painel principal contendo uma plotagem.
 
+3.4.2 Funções da página
+
+A função de layout mais importante, mas menos interessante, é <code>fluidPage()</code>. Você já viu isso em todos os exemplos acima, porque usamos para inserir várias entradas ou saídas em um único aplicativo. O que acontece se você usar <code>fluidPage()</code> por si só?
+
+<img src="https://d33wubrfki0l68.cloudfront.net/ad1d199cecafc2c2be10425930b1dcfb5e8dd5d7/46916/images/basic-app/fluid-page.png" style="display: block; margin: auto;" width="70%">
+
+Parece muito chato porque não há conteúdo, mas nos bastidores, <code>fluidPage()</code> está fazendo muito trabalho. A função de página configura todo o HTML, CSS e JS que o Shiny precisa. <code>fluidPage()</code> usa um sistema de layout chamado Bootstrap, https://getbootstrap.com, que fornece padrões atraentes. Mais adiante, no capítulo XYZ, falaremos sobre como você pode usar um pouco de conhecimento sobre o Bootstrap para obter maior controle sobre a aparência visual do seu aplicativo, para torná-lo mais elegante ou para corresponder ao seu guia de estilo corporativo.
+
+Tecnicamente, <code>fluidPage()</code> é tudo o que você precisa para um aplicativo, porque você pode colocar entradas e saídas diretamente dentro dele. Mas, embora isso seja bom para aprender o básico do Shiny, despejar todas as entradas e saídas em um só lugar não parece muito bom, então você precisa aprender mais funções de layout. Aqui, apresentarei duas estruturas comuns, uma página com barra lateral e um aplicativo com várias linhas, e depois terminaremos com uma rápida discussão de temas.
+
 
 
