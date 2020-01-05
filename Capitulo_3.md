@@ -328,7 +328,7 @@ Agora que você sabe como criar uma gama completa de entradas e saídas, é nece
 
 3.4.1 Visão geral
 
-Os layouts são criados por uma hierarquia de chamadas de função, em que a hierarquia em R corresponde à hierarquia na saída. Quando você vê um código de layout complexo como este:
+Os layouts são criados por uma hierarquia de chamadas de função, em que a hierarquia em R corresponde à hierarquia de saída. Quando você vê um código de layout complexo como este:
 
 ```
 fluidPage(
