@@ -513,5 +513,11 @@ fluidPage(
 
 O Shiny foi desenvolvido para que, como usuário R, você não precise aprender sobre os detalhes do HTML. No entanto, se você já conhece HTML (ou deseja aprender!), Também pode trabalhar diretamente com as tags HTML para atingir qualquer nível de personalização que desejar. E essas abordagens não são de forma alguma exclusivas: você pode misturar funções de alto nível com HTML de baixo nível o quanto quiser. Voltaremos a essas idéias no Capítulo 13, onde você aprenderá mais sobre os recursos de nível inferior para criar HTML diretamente.
 
+<hr>
 
+2. Tudo o que <code>passwordInput()</code> faz é ocultar o que o usuário está digitando, para que alguém que esteja olhando por cima do ombro não possa lê-lo. Cabe a você garantir que as senhas não sejam expostas acidentalmente, por isso não recomendamos o uso de senhas, a menos que você tenha recebido algum treinamento em programação segura.↩
+
+3. Atualmente, o Shiny usa o Bootstrap 3.3.7, https://getbootstrap.com/docs/3.3/, mas a equipe do Shiny planeja atualizar para o 4.0.0, a versão mais recente, em um futuro próximo.↩
+
+4. Ou use <code>lapply()</code> ou <code>purrr::map()</code> se você souber um pouco sobre programação funcional.↩
 
