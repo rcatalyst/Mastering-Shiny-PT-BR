@@ -302,5 +302,9 @@ Por padrão, <code>plotOutput()</code> ocupará toda a largura de seu contêiner
 
 Os gráficos são especiais porque são saídas que também podem atuar como entradas. <code>plotOutput()</code> possui vários argumentos como <code>click</code>, <code>dblclick</code> e <code>hover</code>. Se você passar como strings estas <code>click = "plot_click"</code>, elas criarão uma entrada reativa (<code>input$plot_click</code>) que você pode usar para lidar com a interação do usuário na plotagem. Voltaremos aos gráficos interativos em Shiny no capítulo XYZ.
 
+3.3.4 Downloads
+
+Você pode permitir que o usuário baixe um arquivo com <code>downloadButton()</code> ou <code>downloadLink()</code>. Isso exige novas técnicas na função server, portanto, voltaremos a isso no Capítulo 8.
+
 
 
