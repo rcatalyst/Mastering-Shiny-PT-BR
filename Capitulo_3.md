@@ -322,7 +322,9 @@ server <- function(input, output, session) {
   output$table <- renderDataTable(mtcars, options = list(pageLength = 5))
 }
 ```
+3.4 Layouts
 
+Agora que você sabe como criar uma gama completa de entradas e saídas, é necessário organizá-las na página. Esse é o trabalho das funções de layout, que fornecem a estrutura visual de alto nível de um aplicativo. Aqui, focaremos no <code>fluidPage()</code>, que fornece o estilo de layout usado pela maioria dos aplicativos. Nos próximos capítulos, você aprenderá sobre outras famílias de layout, como painéis e caixas de diálogo.
 
 
 
