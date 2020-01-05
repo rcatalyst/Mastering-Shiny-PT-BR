@@ -490,5 +490,28 @@ Como você pode ver, o tema do seu aplicativo é bastante direto: você só prec
 <li>Navegue pelos temas disponíveis no pacote shinythemes, escolha um tema atraente e aplique-o no aplicativo Teorema do limite central.</li>
 </ol>
 
+3.5 Por debaixo dos panos
+
+No exemplo anterior, você pode ter ficado surpreso ao ver que eu crio um aplicativo Shiny usando uma função, <code>theme_demo()</code>. Isso funciona porque o código Shiny é o código R e você pode usar todas as ferramentas existentes para reduzir a duplicação. Lembre-se da regra de três: se você copiar e colar código mais de três vezes, considere escrever uma função ou usar um loop for.
+
+Todas as funções de entrada, saída e layout retornam HTML, a linguagem descritiva que sustenta todos os sites. Você pode ver esse HTML executando as funções da interface do usuário diretamente no console:
+
+```
+fluidPage(
+  textInput("name", "What's your name?")
+)
+```
+
+``` 
+<div class="container-fluid">
+  <div class="form-group shiny-input-container">
+    <label for="name">What's your name?</label>
+    <input id="name" type="text" class="form-control" value=""/>
+  </div>
+</div>
+``` 
+
+O Shiny foi desenvolvido para que, como usuário R, você não precise aprender sobre os detalhes do HTML. No entanto, se você já conhece HTML (ou deseja aprender!), Também pode trabalhar diretamente com as tags HTML para atingir qualquer nível de personalização que desejar. E essas abordagens não são de forma alguma exclusivas: você pode misturar funções de alto nível com HTML de baixo nível o quanto quiser. Voltaremos a essas idéias no Capítulo 13, onde você aprenderá mais sobre os recursos de nível inferior para criar HTML diretamente.
+
 
 
