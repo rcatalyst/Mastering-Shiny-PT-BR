@@ -37,10 +37,10 @@ Dica do RStudio: você pode criar facilmente um novo diretório e um arquivo <co
 Este é um aplicativo Shiny completo, embora trivial! Observando atentamente o código acima, nosso <code>app.R</code> faz quatro coisas:
 
 <ol>
-    <li>Ele chama library(shiny) para carregar o pacote Shiny.</li>
+    <li>Ele chama <code>library(shiny)</code> para carregar o pacote Shiny.</li>
     <li>Ele define a interface do usuário, a página HTML com a qual os humanos interagem. Nesse caso, é uma página que contém as palavras "Olá, mundo!".</li>
-    <li>Ele especifica o comportamento do nosso aplicativo, definindo uma função server. No momento, ele está vazio, então nosso aplicativo não faz nada, mas voltaremos a revisar isso em breve.</li>
-    <li>Ele executa o shinyApp(ui, server) para construir e iniciar um aplicativo Shiny a partir da interface do usuário e do servidor.</li>
+    <li>Ele especifica o comportamento do nosso aplicativo, definindo uma função <code>server</code>. No momento, ele está vazio, então nosso aplicativo não faz nada, mas voltaremos a revisar isso em breve.</li>
+    <li>Ele executa o <code>shinyApp(ui, server)</code> para construir e iniciar um aplicativo Shiny a partir da interface do usuário e do servidor.</li>
 </ol>
 
 2.3 Executando e parando
@@ -48,7 +48,7 @@ Este é um aplicativo Shiny completo, embora trivial! Observando atentamente o c
 Existem algumas maneiras de executar este aplicativo:
 
 <ul>
-    <li>Clique no botão **Run App** na barra de ferramentas do documento.</li>
+  <li>Clique no botão <strong>Run App</strong> na barra de ferramentas do documento.</li>
     
 <img src="https://d33wubrfki0l68.cloudfront.net/23a8bff2e02f95092ff3b3ea6bc524020aef7de3/2db27/images/basic-app/run-app.png" style="display: block; margin: auto auto auto 0;" width="74">
 
