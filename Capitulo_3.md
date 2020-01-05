@@ -258,5 +258,29 @@ x <- print_and_return()
 x 
 #> [1] "c"
 ```
+3.3.2 Tabelas
+
+Existem duas opções para exibir data frames em tabelas:
+
+<ul>
+<li><code>tableOutput()<code> e <code>renderTable()<code> processam uma tabela estática de dados, mostrando todos os dados de uma só vez.</li>
+<li><code>dataTableOutput()</code> e <code>renderDataTable()<code> processam uma tabela dinâmica, mostrando um número fixo de linhas junto com os controles para alterar quais linhas estão visíveis.</li>
+</ul>
+
+<code>tableOutput()</code> é mais útil para resumos pequenos e fixos (por exemplo, coeficientes de modelo); <code>dataTableOutput()</code> é mais apropriado se você deseja expor um data frame completo para o usuário.
+
+```
+ui <- fluidPage(
+  tableOutput("static"),
+  dataTableOutput("dynamic")
+)
+server <- function(input, output, session) {
+  output$static <- renderTable(head(mtcars))
+  output$dynamic <- renderDataTable(mtcars, options = list(pageLength = 5))
+}
+```
+
+<img src="https://d33wubrfki0l68.cloudfront.net/2fe4c674645896fa18d345ad162f479434746dd2/78343/screenshots/basic-ui/output-table.png" style="display: block; margin: auto;" width="100%">
+
 
 
