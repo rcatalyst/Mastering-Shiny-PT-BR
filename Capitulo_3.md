@@ -189,5 +189,13 @@ ui <- fluidPage(
 
 <img src="https://d33wubrfki0l68.cloudfront.net/16dea4a0f7a4462dfd578a917bdf3e492ed6a7cd/9686e/screenshots/basic-ui/date-slider.png" style="display: block; margin: auto;" width="600">
 
+3. Se você tiver uma lista moderadamente longa, é útil criar subtítulos que dividam a lista em pedaços. Leia a documentação de <code>selectInput()</code> para descobrir como. (Dica: o HTML subjacente é chamado <code><optgroup></code>.)
 
+4. Crie um slider de entrada para selecionar valores entre 0 e 100, em que o intervalo entre cada valor selecionável no slider é 5. Em seguida, adicione animação ao widget de entrada para que, quando o usuário pressionar o botão de reprodução, o widget de entrada role automaticamente.
+
+5. Usando a caixa de entrada numérica a seguir, o usuário pode inserir qualquer valor entre 0 e 1000. Qual é o objetivo do argumento step neste widget?
+
+```
+numericInput("number", "Select a value", value = 150, min = 0, max = 1000, step = 50)
+```
 
