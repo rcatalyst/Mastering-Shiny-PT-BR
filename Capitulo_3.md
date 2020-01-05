@@ -326,5 +326,41 @@ server <- function(input, output, session) {
 
 Agora que você sabe como criar uma gama completa de entradas e saídas, é necessário organizá-las na página. Esse é o trabalho das funções de layout, que fornecem a estrutura visual de alto nível de um aplicativo. Aqui, focaremos no <code>fluidPage()</code>, que fornece o estilo de layout usado pela maioria dos aplicativos. Nos próximos capítulos, você aprenderá sobre outras famílias de layout, como painéis e caixas de diálogo.
 
+3.4.1 Visão geral
+
+Os layouts são criados por uma hierarquia de chamadas de função, em que a hierarquia em R corresponde à hierarquia na saída. Quando você vê um código de layout complexo como este:
+
+```
+fluidPage(
+  titlePanel("Hello Shiny!"),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("obs", "Observations:", min = 0, max = 1000, value = 500)
+    ),
+    mainPanel(
+      plotOutput("distPlot")
+    )
+  )
+)
+```
+
+Primeiro, deslize-o concentrando-se na hierarquia das chamadas de função:
+
+```
+fluidPage(
+  titlePanel(),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("obs")
+    ),
+    mainPanel(
+      plotOutput("distPlot")
+    )
+  )
+)
+```
+
+Mesmo sem saber nada sobre as funções de layout, você pode ler os nomes das funções para adivinhar como será esse aplicativo. Você pode imaginar que esse código gerará um design clássico de aplicativo: uma barra de título na parte superior, seguida por uma barra lateral (contendo um slider), com o painel principal contendo uma plotagem.
+
 
 
