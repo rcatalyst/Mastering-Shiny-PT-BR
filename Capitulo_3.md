@@ -452,5 +452,36 @@ Figura 3.2: A estrutura subjacente a um aplicativo simples de várias linhas
 
 Observe que o primeiro argumento da <code>column()</code> é a largura, e a largura de cada linha deve adicionar até 12. Isso oferece flexibilidade substancial, pois você pode criar facilmente layouts de 2, 3 ou 4 colunas (mais do que isso começa a ficar apertado) ou use colunas estreitas para criar espaçadores.
 
+3.4.5 Temas
+
+No capítulo XYZ, abordaremos todos os detalhes da personalização da aparência visual do seu aplicativo Shiny. Criar um tema completo do zero é muito trabalhoso (mas geralmente vale a pena!), Mas você pode obter algumas vitórias fáceis usando o pacote shinythemes. O código a seguir mostra quatro opções:
+
+```
+theme_demo <- function(theme) {
+  fluidPage(
+    theme = shinythemes::shinytheme(theme),
+    sidebarLayout(
+      sidebarPanel(
+        textInput("txt", "Text input:", "text here"),
+        sliderInput("slider", "Slider input:", 1, 100, 30)
+      ),
+      mainPanel(
+        h1("Header 1"),
+        h2("Header 2"),
+        p("Some text")
+      )
+    )
+  )
+}
+theme_demo("darkly")
+theme_demo("flatly")
+theme_demo("sandstone")
+theme_demo("united")
+```
+
+<p><img src="https://d33wubrfki0l68.cloudfront.net/b48c12e1e4925c8e7849be1c592356b4edfc958f/b7ae2/screenshots/basic-ui/theme-darkly.png" width="50%"><img src="https://d33wubrfki0l68.cloudfront.net/d537e90ccab138e57e24b74d8344a20901ad18b4/25bfc/screenshots/basic-ui/theme-flatly.png" width="50%"><img src="https://d33wubrfki0l68.cloudfront.net/8fd4e4d0af7cb45e93797a4d42d087c6ae44c5c5/27f12/screenshots/basic-ui/theme-sandstone.png" width="50%"><img src="https://d33wubrfki0l68.cloudfront.net/2ef0afc4700714f27c7ae8b3a1b6c5ff216ccd92/72e44/screenshots/basic-ui/theme-united.png" width="50%"></p>
+
+Como você pode ver, o tema do seu aplicativo é bastante direto: você só precisa usar o argumento do tema para <code>fluidPage()</code>. Para descobrir quais temas estão disponíveis e como eles são, dê uma olhada no aplicativo seletor de temas Shiny em https://shiny.rstudio.com/gallery/shiny-theme-selector.html.
+
 
 
