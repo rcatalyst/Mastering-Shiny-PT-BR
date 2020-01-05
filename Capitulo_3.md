@@ -450,7 +450,7 @@ fluidPage(
 
 Figura 3.2: A estrutura subjacente a um aplicativo simples de várias linhas
 
-Observe que o primeiro argumento da <code>column()<code> é a largura, e a largura de cada linha deve adicionar até 12. Isso oferece flexibilidade substancial, pois você pode criar facilmente layouts de 2, 3 ou 4 colunas (mais do que isso começa a ficar apertado) ou use colunas estreitas para criar espaçadores.
+Observe que o primeiro argumento da <code>column()</code> é a largura, e a largura de cada linha deve adicionar até 12. Isso oferece flexibilidade substancial, pois você pode criar facilmente layouts de 2, 3 ou 4 colunas (mais do que isso começa a ficar apertado) ou use colunas estreitas para criar espaçadores.
 
 
 
